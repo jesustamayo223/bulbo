@@ -1,0 +1,105 @@
+<app-header titulo="segment"></app-header>
+
+<ion-content>
+  <ion-segment (ionChange)="segmentChanged($event)">
+    <ion-segment-button value="friends">
+      <ion-label>ALL</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="enemies">
+      <ion-label>FAVORITES</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+      <!-- Label only -->
+      <ion-segment value="favorite">
+        <ion-segment-button value="call">
+          <ion-label>Call</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="favorite">
+          <ion-label>Favorite</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="map">
+          <ion-label>Map</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+
+      <!-- Icon only -->
+      <ion-segment color="secondary" value="call">
+        <ion-segment-button value="call">
+          <ion-icon name="call"></ion-icon>
+        </ion-segment-button>
+        <ion-segment-button value="heart">
+          <ion-icon name="heart"></ion-icon>
+        </ion-segment-button>
+        <ion-segment-button value="map">
+          <ion-icon name="pin"></ion-icon>
+        </ion-segment-button>
+      </ion-segment>
+
+      <!-- Icon top -->
+      <ion-segment color="tertiary" value="favorite">
+        <ion-segment-button value="call">
+          <ion-label>Call</ion-label>
+          <ion-icon name="call"></ion-icon>
+        </ion-segment-button>
+        <ion-segment-button value="favorite">
+          <ion-label>Favorite</ion-label>
+          <ion-icon name="heart"></ion-icon>
+        </ion-segment-button>
+        <ion-segment-button value="map">
+          <ion-label>Map</ion-label>
+          <ion-icon name="pin"></ion-icon>
+        </ion-segment-button>
+      </ion-segment>
+
+      <!-- Icon bottom -->
+      <ion-segment color="success" value="call">
+        <ion-segment-button value="call" layout="icon-bottom">
+          <ion-icon name="call"></ion-icon>
+          <ion-label>Call</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="favorite" layout="icon-bottom">
+          <ion-icon name="heart"></ion-icon>
+          <ion-label>Favorite</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="map" layout="icon-bottom">
+          <ion-icon name="pin"></ion-icon>
+          <ion-label>Map</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+
+      <ion-list-header>Scrollable</ion-list-header>
+
+      <!-- Icon start -->
+      <ion-segment color="warning" scrollable value="call">
+        <ion-segment-button value="call" layout="icon-start">
+          <ion-label>Call</ion-label>
+          <ion-icon name="call"></ion-icon>
+        </ion-segment-button>
+        <ion-segment-button value="favorite" layout="icon-start">
+          <ion-label>Favorite</ion-label>
+          <ion-icon name="heart"></ion-icon>
+        </ion-segment-button>
+        <ion-segment-button value="map" layout="icon-start">
+          <ion-label>Map</ion-label>
+          <ion-icon name="pin"></ion-icon>
+        </ion-segment-button>
+      </ion-segment>
+
+      <!-- Icon end -->
+      <ion-segment color="danger" scrollable value="map">
+        <ion-segment-button value="call" layout="icon-end">
+          <ion-icon name="call"></ion-icon>
+          <ion-label>Call</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="favorite" layout="icon-end">
+          <ion-icon name="heart"></ion-icon>
+          <ion-label>Favorite</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="map" layout="icon-end">
+          <ion-icon name="pin"></ion-icon>
+          <ion-label>Map</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+
+</ion-content>
